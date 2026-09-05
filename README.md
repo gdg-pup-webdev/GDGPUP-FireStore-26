@@ -1,10 +1,25 @@
-Welcome to Express StudyJam — Routes, Views & Todo App
+# Express StudyJam: Routes, Views & Todo App
 
 This repository contains the materials used in a StudyJam that demonstrates how a small Express backend can serve a vanilla JavaScript front-end. The project is a compact Todo application used to teach routing, CRUD operations, and DOM-driven UI updates.
 
----
+## Table of Contents
 
-## 📂 Repository Structure
+- [About](#about)
+- [Repository Structure](#repository-structure)
+- [Technologies](#technologies)
+- [Quick start](#quick-start)
+- [API Endpoints](#api-endpoints-demo)
+- [Learning Outcomes](#learning-outcomes)
+- [Activities & Challenges](#activities--challenges)
+- [Contributing](#contributing)
+- [Documentation](#documentation)
+- [Contributors](#contributors)
+
+## About
+
+Hands-on StudyJam materials for GDG PUP: a minimal Express server plus vanilla JS Todo UI. Aimed at learners who want routing, CRUD, and `fetch`-driven DOM updates without a frontend framework.
+
+## Repository Structure
 
 Explore the key files and folders below.
 
@@ -15,15 +30,13 @@ Explore the key files and folders below.
 
 ### Important paths
 
-- `app.js` — server bootstrap and middleware registration.
-- `routes/route.js` — CRUD routes for the Todo API and the root route serving the app.
-- `views/` — frontend: `index.html`, `index.css`, `index.js` (UI, layout, client logic).
-- `render.js` — helper to resolve view files for responses.
-- `todo.json` — file-based storage used for demo persistence.
+- `app.js` - server bootstrap and middleware registration.
+- `routes/route.js` - CRUD routes for the Todo API and the root route serving the app.
+- `views/` - frontend: `index.html`, `index.css`, `index.js` (UI, layout, client logic).
+- `render.js` - helper to resolve view files for responses.
+- `todo.json` - file-based storage used for demo persistence.
 
----
-
-## 🔧 Technologies
+## Technologies
 
 | Technology        | Purpose                                 |
 | ----------------- | --------------------------------------- |
@@ -31,9 +44,7 @@ Explore the key files and folders below.
 | HTML / CSS        | Frontend markup and styling             |
 | JavaScript (ES6)  | Frontend logic, state and `fetch` calls |
 
----
-
-## 🚀 Quick start
+## Quick start
 
 1. Clone or download this repository.
 2. Install dependencies (if present) and start the server:
@@ -49,29 +60,23 @@ npm start
 
 Tips: edit `views/index.js` to experiment with client behaviour; update `routes/route.js` to practice server-side logic.
 
----
+## API Endpoints (Demo)
 
-## 🔁 API Endpoints (Demo)
-
-- `GET /todos` — list all todos
-- `POST /todos` — create `{ task: string }`
-- `GET /todos/:id` — get a single todo
-- `PATCH /todos/:id` — update `{ task?, done? }`
-- `DELETE /todos/:id` — remove a todo
+- `GET /todos` - list all todos
+- `POST /todos` - create `{ task: string }`
+- `GET /todos/:id` - get a single todo
+- `PATCH /todos/:id` - update `{ task?, done? }`
+- `DELETE /todos/:id` - remove a todo
 
 Use `curl`, Postman, or the app UI to interact with these endpoints.
 
----
-
-## 🎯 Learning Outcomes
+## Learning Outcomes
 
 - Map Express routes to frontend actions using `fetch`.
 - Implement and test CRUD behavior in a tiny app.
 - Practice DOM manipulation and lightweight state handling without libraries.
 
----
-
-## ✏️ Activities & Challenges
+## Activities & Challenges
 
 | Activity          | Description                                                                           |
 | ----------------- | ------------------------------------------------------------------------------------- |
@@ -82,34 +87,20 @@ Use `curl`, Postman, or the app UI to interact with these endpoints.
 Suggested exercises:
 
 - Add a `/stats` route that returns counts (active/total/done).
-- Add per-user todo lists (no auth required — simulate users by query param).
+- Add per-user todo lists (no auth required - simulate users by query param).
 
----
-
-## 🤝 Contributing
+## Contributing
 
 Contributions and improvements are welcome. Please open a focused PR and document any new scripts or commands in this README.
 
----
-
-## ❤️ Credits
-
-<div align="center">
-
-Made for teaching and demos by the GDG PUP Web Dev Team.
-
-Happy coding! 🚀
-
-</div>
-
----
-
 ## Documentation
 
-- [docs/state.md](docs/state.md) - Teaching position / handover
-- [docs/index.md](docs/index.md) - Doc inventory
-- [FLAGS.md](FLAGS.md) - Improvement register
-- [AGENTS.md](AGENTS.md) - Agent load order
+| Doc | Purpose |
+|-----|---------|
+| [State](docs/state.md) | Teaching position / handover |
+| [Index](docs/index.md) | Doc inventory |
+| [FLAGS](FLAGS.md) | Improvement register |
+| [AGENTS](AGENTS.md) | Agent load order |
 
 ## Contributors
 
